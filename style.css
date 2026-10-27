@@ -1,0 +1,202 @@
+
+/* =====================================
+   SYAFII STARTER - BACKGROUND PREMIUM
+   ===================================== */
+
+/* Latar belakang seluruh halaman */
+html,
+body {
+    background-color: #f4f2ff !important;
+    background-image:
+        radial-gradient(
+            ellipse at 0% 5%,
+            rgba(126, 87, 255, 0.20),
+            transparent 35%
+        ),
+        radial-gradient(
+            ellipse at 100% 35%,
+            rgba(255, 156, 115, 0.18),
+            transparent 32%
+        ),
+        radial-gradient(
+            ellipse at 45% 100%,
+            rgba(89, 164, 255, 0.18),
+            transparent 38%
+        ) !important;
+    background-attachment: fixed !important;
+}
+
+/* Header */
+.site-header {
+    background: rgba(255, 255, 255, 0.94) !important;
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    box-shadow: 0 5px 25px rgba(35, 25, 90, 0.08) !important;
+}
+
+/* Banner utama - paksa ganti background hijau */
+.hero {
+    position: relative !important;
+    overflow: hidden !important;
+    color: #ffffff !important;
+
+    background:
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(255, 183, 107, 0.95) 0%,
+            rgba(255, 183, 107, 0.12) 20%,
+            transparent 38%
+        ),
+        radial-gradient(
+            ellipse at 10% 110%,
+            #7965ff 0%,
+            transparent 48%
+        ),
+        radial-gradient(
+            ellipse at 100% 100%,
+            #387cf5 0%,
+            transparent 50%
+        ),
+        linear-gradient(
+            120deg,
+            #171a3b 0%,
+            #332568 48%,
+            #6248bb 100%
+        ) !important;
+
+    padding: 90px 0 !important;
+    border-radius: 0 0 28px 28px;
+}
+
+/* Dekorasi cahaya pada banner */
+.hero::before {
+    content: "" !important;
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    top: -140px;
+    right: 8%;
+    border: 1px solid rgba(255,255,255,0.24);
+    border-radius: 50%;
+    background: rgba(255,255,255,0.06);
+    box-shadow:
+        0 0 0 35px rgba(255,255,255,0.035),
+        0 0 0 70px rgba(255,255,255,0.025);
+    pointer-events: none;
+}
+
+/* Teks banner */
+.hero h1 {
+    color: #ffffff !important;
+    text-shadow: 0 4px 24px rgba(0,0,0,0.18);
+}
+
+.hero p {
+    color: #e8eaff !important;
+}
+
+/* Tombol banner */
+.hero .button,
+.hero a.button,
+.hero .wp-block-button__link {
+    background: linear-gradient(
+        135deg,
+        #ffd27b,
+        #ff9e57
+    ) !important;
+    color: #292047 !important;
+    border: none !important;
+    border-radius: 12px !important;
+    padding: 13px 23px !important;
+    box-shadow: 0 8px 24px rgba(255,158,87,0.25);
+    transition: 0.3s ease;
+}
+
+.hero .button:hover,
+.hero a.button:hover,
+.hero .wp-block-button__link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(255,158,87,0.4);
+}
+
+/* Area artikel */
+.content-wrap {
+    background: transparent !important;
+}
+
+/* Kartu artikel */
+.post-card,
+.sidebar-widget,
+.article-card {
+    background: rgba(255,255,255,0.90) !important;
+    border: 1px solid rgba(255,255,255,0.95) !important;
+    border-radius: 18px !important;
+    box-shadow: 0 12px 35px rgba(43,34,100,0.09) !important;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.post-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 18px 40px rgba(43,34,100,0.15) !important;
+}
+
+/* Judul bagian */
+.section-heading {
+    color: #28234f !important;
+}
+
+.section-heading::after {
+    background: linear-gradient(
+        90deg,
+        #7758ff,
+        #ffab69,
+        #ed83c4
+    ) !important;
+}
+
+/* Judul artikel */
+.post-card h2 a,
+.article-card h1,
+.article-content h2,
+.article-content h3 {
+    color: #30245f !important;
+}
+
+/* Sidebar */
+.sidebar-widget {
+    border-top: 4px solid #795cff !important;
+}
+
+/* Footer */
+.site-footer {
+    background:
+        radial-gradient(
+            ellipse at 10% 0%,
+            rgba(120,90,255,0.30),
+            transparent 40%
+        ),
+        linear-gradient(
+            120deg,
+            #15172f,
+            #29204f 60%,
+            #49347f
+        ) !important;
+    color: #f4f0ff !important;
+}
+
+.site-footer a {
+    color: #ffd27b !important;
+}
+
+/* Tampilan HP */
+@media (max-width: 760px) {
+    .hero {
+        padding: 55px 0 !important;
+        border-radius: 0 0 18px 18px;
+    }
+
+    .hero::before {
+        right: -150px;
+    }
+}
